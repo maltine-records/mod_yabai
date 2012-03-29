@@ -74,7 +74,7 @@ static int yabaic_handler(request_rec *r)
   char* rcv;
   unsigned long yabasa;
   size_t value_length;
-  uint32_t flags;
+  uint32_t flags = 0;
 
   if (strcmp(r->handler, "yabaic")) {
       return DECLINED;
